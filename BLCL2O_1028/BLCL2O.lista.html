@@ -3,6 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Lista készítése</title>
+
+    <style>
+        dt.fdt {
+            color: blue;
+            font-weight: bold;
+            font-size: large;
+        }
+        dd.fdd {
+            color: blue;
+        }
+    </style>
+
 </head>
 <body>
     <h1>Lista készítése</h1>
@@ -69,6 +81,45 @@
             <dd class="fdd">Macskaszerű ragadozó emlős</dd>
             <dd class="fdd">Az állatok királya</dd>    
     </dl>
+
+    <h3>g. Embedded HTML lists</h3>
+
+    <h3 style="color: palevioletred;">Kedvenc reggeki italaim</h3>
+
+    <dl>
+
+        <ul>
+            <li>
+                <dt>Kávé</dt>
+            </li>
+            <li>
+                <dt>Tea</dt>
+            </li>
+        </ul>
+
+        <ul>
+            <dd>
+                <li style="list-style-type: circle;">Fekete</li>
+            </dd>
+            <dd>
+                <li style="list-style-type: circle;">Zöld</li>
+            </dd>
+        </ul>
+            
+        <ul>
+            <li>
+                <dt>Tek</dt>
+            </li>
+        </ul>
+    </dl>
+    
+    <h3>h. Control List Counting</h3>
+
+    <ol start="5">
+        <li>KL</li>
+        <li>EL</li>
+        <li>BL</li>
+    </ol>
 
 </body>
 </html>
