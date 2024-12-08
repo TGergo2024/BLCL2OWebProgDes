@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Térkép</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            margin-left: 220px;
+            float: inline-start;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        li a:active {
+            color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Kezdőlap</a></li>
+            <li><a href="enciklopedia.html">Enciklopédia</a></li>
+            <li><a href="forum.html">Fórum</a></li>
+            <li><a href="tura.html">Túrák</a></li>
+            <li><a href="terkep.html">Térkép</a></li>
+        </ul>
+    </nav>
+    <iframe src="https://turistautak.openstreetmap.hu"></iframe>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="file/etika.pdf" target="_blank">A gombászat etikája</a>
+            </li>
+            <li>
+                <a href="file/szabaly.pdf" target="_blank">Jogi háttér</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

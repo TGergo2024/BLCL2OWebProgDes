@@ -1,0 +1,17 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #245639;
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+    color: black;
+  }
+
+  iframe {
+    width : 1500px;
+    height: 1000px;
+    display: block;
+    margin: 0 auto;
+  }

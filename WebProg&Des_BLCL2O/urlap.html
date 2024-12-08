@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelentkezés</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: burlywood;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="/submit-form" method="post">
+        <label for="name">Név:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Kapcsolat:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Üzenet:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Jelentkezem</button>
+    </form>
+        <a href="tura.html"><button>Vissza</button></a>
+
+</body>
+</html>

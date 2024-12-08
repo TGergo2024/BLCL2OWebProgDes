@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Főoldal</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        footer {
+            margin-top: 11.5%;
+        }
+        .grid-container {
+            margin-top: 250px;
+            margin-left: 250px;
+            width: 50%;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            padding: 10px;
+            column-gap: 40px;
+        }
+
+        .carouselKep {
+            height: 300px;
+            width: 300px;
+            opacity: 70%;
+        }
+
+         .carousel-caption {
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+        } 
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            margin-left: 500px;
+            float: inline-start;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        li a:active {
+            color: blue;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="grid-container">
+        <div>
+            <a href="enciklopedia.html"><img class="carouselKep" src="img/enciklopedia.jpg" alt="enciklopedia"></a>
+        </div>
+        <div>
+            <a href="forum.html"><img class="carouselKep" src="img/forum.jpg" alt="forum"></a>
+        </div>
+        <div>
+            <a href="tura.html"><img class="carouselKep" src="img/turak.jpg" alt="turak"></a>
+        </div>
+        <div>
+            <a href="terkep.html"><img class="carouselKep" src="img/terkep.jpg" alt=""></a>
+        </div>
+        <div class="carousel-caption">
+            <h1>Enciklopédia</h1>
+        </div>
+        <div class="carousel-caption">
+            <h1>Fórum</h1>
+        </div>
+        <div class="carousel-caption">
+            <h1>Túrák</h1>
+        </div>
+        <div class="carousel-caption">
+            <h1>Térkép</h1>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <ul>
+            <li>
+                <a href="file/etika.pdf" target="_blank">A gombászat etikája</a>
+            </li>
+            <li>
+                <a href="file/szabaly.pdf" target="_blank">Jogi háttér</a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+</html>

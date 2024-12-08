@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Túrák</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        footer {
+            margin-top: 3%;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+    
+        li {
+            margin-left: 220px;
+            float: inline-start;
+        }
+    
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+    
+        li a:hover {
+            background-color: #111;
+        }
+    
+        li a:active {
+            color: blue;
+        }
+
+        .forum {
+            background-color: #FBF9F1;
+            border: 2px  solid black;
+            border-radius: 20px;
+            margin: 3% 10% 0 10%;
+        }
+
+        .forumFelhasznaloNev {
+            padding: 1%;
+            margin-left: 3%;
+            margin-top: 1%;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        .forumTema {
+            padding: 1%;
+            margin-left: 3%;
+            margin-top: 1%;
+            width: 400px;
+            text-align: justify;
+        }
+
+        .komment {
+            padding: 1%;
+            margin-left: 3%;
+            margin-top: 1%;
+        }
+
+        </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Kezdőlap</a></li>
+            <li><a href="enciklopedia.html">Enciklopédia</a></li>
+            <li><a href="forum.html">Fórum</a></li>
+            <li><a href="tura.html">Túrák</a></li>
+            <li><a href="terkep.html">Térkép</a></li>
+        </ul>
+    </nav>
+
+    <div class="forum">
+        <p class="forumFelhasznaloNev">TesztUser1</p>
+        <p style="border: 1px solid black;"></p>
+        <p class="forumTema"> Sziasztok!<br> A következő kérdésem lenne. Találtam egy légyölő galócát. Ehető szerintetek?<br>Előre is köszönöm a válaszokat!</p>
+        <p style="border: 1px solid black;"></p>
+        <p class="komment" style="font-size: larger;">Hozzászólások:</p>
+        <p class="komment"><span style="font-weight: bold;">TesztUser5</span><br>Szia. Szerintem nem!</p>
+    </div>
+    <div class="forum">
+        <p class="forumFelhasznaloNev">TesztUser3</p>
+        <p style="border: 1px solid black;"></p>
+        <p class="forumTema"> Szép napot!<br> A minap szedtem egy kosár gombát, viszont nem vagyok biztos magamban. Hova tudom elvinni ellenőriztetni?<br>Köszönöm a segítséget!</p>
+        <p style="border: 1px solid black;"></p>
+        <p class="komment" style="font-size: larger;">Hozzászólások:</p>
+        <p class="komment"><span style="font-weight: bold;">TesztUser9</span><br>Szép napot!<br>A legközelebb Sátoraljaújhelyben van gombaellenőrző állomás.<br>Ott biztosan segítenek.</p>
+    </div>
+    <footer>
+        <ul>
+            <li>
+                <a href="file/etika.pdf" target="_blank">A gombászat etikája</a>
+            </li>
+            <li>
+                <a href="file/szabaly.pdf" target="_blank">Jogi háttér</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
