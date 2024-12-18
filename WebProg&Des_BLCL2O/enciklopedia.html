@@ -6,17 +6,35 @@
     <title>Enciklopédia</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+        
+        }
+
+        body {
+            display: flex;
+            flex-direction: column; 
+            min-height: 100vh;
+        }
+
         ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+          display: flex;
+          flex-wrap: wrap; 
+          justify-content: center; 
         }
 
         li {
-            margin-left: 220px;
-            float: inline-start;
+          flex: 1; 
+          text-align: center;
         }
 
         li a {
@@ -32,29 +50,44 @@
         }
 
         li a:active {
-            color: blue;
+          color: blue;
         }
-    .table {
-        margin: 3% auto 3% auto;
-        width: 950px;
-        border: 2px solid black;
-    }
 
-    th {
-        background-color: darkgray;
-        font-size: 20px;
-        border: 1px solid black;
+        
+        table {
+          margin: 3% auto;
+          width: 90%; 
+          max-width: 950px; 
+          border: 2px solid black;
+          overflow-x: auto; 
+        }
+
+        th {
+          background-color: darkgray;
+          font-size: 20px;
+          border: 1px solid black;
+          text-align: center;
+        }
+
+      .gombaTd {
         text-align: center;
-    }
-    .gombaTd {
-        text-align: center;
         border: 1px solid black;
-    }
-    img {
-        padding: 10px;
-        width: 250px;
-        height: 250px;
-    }
+      }
+
+      img {
+          padding: 10px;
+          width: 90%; 
+          max-width: 250px; 
+          height: auto; 
+      }
+
+      .video_container {
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
 
     </style>
 </head>
@@ -68,6 +101,11 @@
             <li><a href="terkep.html">Térkép</a></li>
         </ul>
     </nav>
+
+    <div class="video_container">
+      <video src="img/gomba.mp4" autoplay="false" controls width="600px"></video>
+    </div>
+    
 
     <table class="table table-striped">
         <tr>
@@ -160,14 +198,7 @@
 
 
     <footer>
-        <ul>
-            <li>
-                <a href="file/etika.pdf" target="_blank">A gombászat etikája</a>
-            </li>
-            <li>
-                <a href="file/szabaly.pdf" target="_blank">Jogi háttér</a>
-            </li>
-        </ul>
+       &copy; Tán Gergő - BLCL2O
     </footer>
 
 </body>

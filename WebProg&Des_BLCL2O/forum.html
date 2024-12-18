@@ -6,23 +6,36 @@
     <title>Túrák</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        footer {
-            margin-top: 3%;
+       footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 5%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column; 
+            min-height: 100vh;
         }
 
         ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+          display: flex;
+          flex-wrap: wrap; 
+          justify-content: center; 
         }
-    
+
         li {
-            margin-left: 220px;
-            float: inline-start;
+          flex: 1; 
+          text-align: center;
         }
-    
+
         li a {
             display: block;
             color: white;
@@ -30,20 +43,20 @@
             padding: 14px 16px;
             text-decoration: none;
         }
-    
+
         li a:hover {
             background-color: #111;
         }
-    
+
         li a:active {
-            color: blue;
+          color: blue;
         }
 
         .forum {
             background-color: #FBF9F1;
             border: 2px  solid black;
             border-radius: 20px;
-            margin: 3% 10% 0 10%;
+            margin: 3% 10% 0 15%;
         }
 
         .forumFelhasznaloNev {
@@ -68,6 +81,29 @@
             margin-top: 1%;
         }
 
+        .sidebar {
+            margin-top: 5%;
+            margin-left: 1%;
+            height: 500px; 
+            width: 160px; 
+            position: fixed; 
+            z-index: 1; 
+            top: 0; 
+            left: 0;
+            background-color: #B8001F;
+            overflow-x: hidden;
+            padding-top: 20px;
+            border: 2px dashed black;
+            border-radius: 25px;
+        }
+
+        #sideSzoveg {
+            font-weight: bold;
+            font-size: large;
+            text-align: center;
+            padding: 1%;
+        }
+
         </style>
 </head>
 <body>
@@ -80,6 +116,14 @@
             <li><a href="terkep.html">Térkép</a></li>
         </ul>
     </nav>
+
+    <div class="sidebar">
+        <p id="sideSzoveg">
+            A fórum szabályzat betartása minden felhasználó részére kötelező. <br>
+            A szabály nem ismerete nem mentesíti a felhasználót a betartása alól!
+        </p> 
+    </div>
+
 
     <div class="forum">
         <p class="forumFelhasznaloNev">TesztUser1</p>
@@ -98,14 +142,7 @@
         <p class="komment"><span style="font-weight: bold;">TesztUser9</span><br>Szép napot!<br>A legközelebb Sátoraljaújhelyben van gombaellenőrző állomás.<br>Ott biztosan segítenek.</p>
     </div>
     <footer>
-        <ul>
-            <li>
-                <a href="file/etika.pdf" target="_blank">A gombászat etikája</a>
-            </li>
-            <li>
-                <a href="file/szabaly.pdf" target="_blank">Jogi háttér</a>
-            </li>
-        </ul>
+       &copy; Tán Gergő - BLCL2O
     </footer>
 </body>
 </html>

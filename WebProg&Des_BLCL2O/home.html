@@ -8,41 +8,60 @@
 
     <style>
         footer {
-            margin-top: 11.5%;
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+        
         }
+
+        body {
+            display: flex;
+            flex-direction: column; 
+            min-height: 100vh;
+            max-width: auto;
+        }
+
         .grid-container {
-            margin-top: 250px;
-            margin-left: 250px;
-            width: 50%;
+            margin: auto; 
+            width: 100%;
+            max-width: auto; 
             display: grid;
-            grid-template-columns: auto auto auto auto;
-            padding: 10px;
-            column-gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); 
+            padding: 0px;
+            gap: 5%; 
         }
 
         .carouselKep {
-            height: 300px;
-            width: 300px;
+            height: auto;
+            max-width: 80%;
             opacity: 70%;
+            border-radius: 10px; 
+            display: block;
+            margin: 0 auto;
         }
 
-         .carousel-caption {
+        .carousel-caption {
             font-size: 14px;
             font-weight: bold;
             text-align: center;
-        } 
+            margin-top: 10px;
+        }
 
         ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+          display: flex;
+          flex-wrap: wrap; 
+          justify-content: center; 
         }
 
         li {
-            margin-left: 500px;
-            float: inline-start;
+          flex: 1; 
+          text-align: center;
         }
 
         li a {
@@ -58,7 +77,7 @@
         }
 
         li a:active {
-            color: blue;
+          color: blue;
         }
     </style>
 
@@ -95,14 +114,7 @@
 
 
     <footer>
-        <ul>
-            <li>
-                <a href="file/etika.pdf" target="_blank">A gombászat etikája</a>
-            </li>
-            <li>
-                <a href="file/szabaly.pdf" target="_blank">Jogi háttér</a>
-            </li>
-        </ul>
+       &copy; Tán Gergő - BLCL2O
     </footer>
 
 </body>
